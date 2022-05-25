@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="backdrop"></div>
+      <div id="modal">
+        <h2 class="title">rules</h2>
+        <button id="close">
+          <img src="./images/icon-close.svg" alt="close" />
+        </button>
+        <img
+          src="./images/image-rules-bonus.svg"
+          alt="sorry we could not load the image"
+        />
+      </div>
+      <div class="header">
+        <img class="logo" src="./images/logo-bonus.svg" alt="logo" />
+        <div class="scoreDiv">
+          <h3>score</h3>
+          <p class="score">0</p>
+        </div>
+      </div>
+      <section id="choices">
+        <button class="choices-btn choice" choice="scissors">
+          <div class="scissors">
+            <img src="./images/icon-scissors.svg" alt="scissors" />
+          </div>
+        </button>
+        <button class="choices-btn choice" choice="spock">
+          <div class="spock">
+            <img src="./images/icon-spock.svg" alt="spock" />
+          </div>
+        </button>
+        <button class="choices-btn choice" choice="paper">
+          <div class="paper">
+            <img src="./images/icon-paper.svg" alt="paper" />
+          </div>
+        </button>
+        <button class="choices-btn choice" choice="lizard">
+          <div class="lizard">
+            <img src="./images/icon-lizard.svg" alt="lizard" />
+          </div>
+        </button>
+        <button class="choices-btn choice" choice="rock">
+          <div class="rock">
+            <img src="./images/icon-rock.svg" alt="rock" />
+          </div>
+        </button>
+      </section>
+      <section id="results">
+        <h3 class="user-title">you picked</h3>
+        <button class="choice user-choice" choice="scissors">
+          <div class="">
+            <img src="" alt="image not found" />
+          </div>
+        </button>
+        <div class="result-top"></div>
+        <div class="result">
+          <h1 class="result-text">YOU WIN</h1>
+          <button class="result-btn">PLAY AGAIN</button>
+        </div>
+        <h3 class="house-title">the house picked</h3>
+        <button class="choice house-choice" choice="scissors">
+          <div class="not-to-be-shown">
+            <img src="" alt="image not found" />
+          </div>
+        </button>
+      </section>
+      <section class="rules">
+        <button class="rules-btn"><span>rules</span></button>
+      </section>
+    </div>
+  </body>
+</html>
